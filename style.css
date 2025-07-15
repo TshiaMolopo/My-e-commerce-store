@@ -1,0 +1,64 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color:rgb(3, 3, 245) ;
+}
+
+h1{
+    margin-bottom: 10px;
+    color: #4caf50;
+    font-size: 2rem;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    gap: 10px;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border: 2px solid #007bff;
+    font-size: 2.5em;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease,transform 0.2s ease;
+}
+
+.cell:hover{
+background: #e1f5fe;
+transform: scale(1.05);
+}
+
+.status{
+    margin: 15px o;
+    font-size: 1.2rem;
+    color: #4caf50;
+}
+
+button{
+margin: 20px;
+padding: 12px 24px;
+font-size: 1.2rem;
+cursor: pointer;
+border-radius: 25px 10px;
+background-color: #ff5722;
+color: white;
+border: none;
+transition: background-color 0.3rem ease;
+}
+
+button:hover{
+    background-color: #4359ff;
+}
+
